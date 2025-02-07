@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useContext,useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { useNavigate } from "react-router-dom";
+import profileImg from "../assets/images/imgback1.png"
 
 const Herosection = () => {
   const { theme } = useContext(ThemeContext);
@@ -50,7 +51,7 @@ const Herosection = () => {
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
           <motion.img
-            src="/src/assets/images/imgback1.png"
+            src={profileImg}
             alt="Profile"
             className="rounded-full border-4 border-white w-44 h-44 sm:w-56 sm:h-56 object-cover shadow-2xl"
           />
