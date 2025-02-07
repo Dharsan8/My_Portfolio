@@ -3,14 +3,15 @@ import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { ThemeContext } from "../context/ThemeContext";
 import Modal from "./Modal"; // Custom modal component
-
+import ecommerceImg from "../assets/images/meanstack.png"
+import bakeryImg from "../assets/images/bakery.png"
 const projects = [
   {
     title: "E-Commerce Platform",
     stack: "MEAN Stack",
     description:
       "A full-stack e-commerce platform built using the MEAN stack, designed for showcasing and selling electronics. It features secure user authentication and an intuitive admin dashboard for managing products and orders.",
-    image: "src/assets/images/meanstack.png", 
+    image: ecommerceImg, 
     github: "#",
     features: [
       "Secure User Authentication",
@@ -26,7 +27,7 @@ const projects = [
     stack: "MERN Stack",
     description:
       "An intuitive online baking platform built with the MERN stack, allowing users to browse, customize, and order freshly baked goods. It features secure authentication, a smooth checkout process, and efficient order management.",
-    image: "src/assets/images/bakery.png",
+    image: bakeryImg,
     github: "#",
     features: [
       "Admin Dashboard",

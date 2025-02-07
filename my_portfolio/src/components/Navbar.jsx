@@ -6,6 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import { ThemeContext } from "../context/ThemeContext";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
+import logoImg from "../assets/images/DHARSANLogo.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,7 +33,7 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <img 
-        src="/src/assets/images/DHARSANLogo.png" 
+        src={logoImg}
         alt="Logo" 
         className="h-10 md:h-8 w-auto object-contain" 
       />

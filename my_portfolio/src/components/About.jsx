@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import aboutImg from "../assets/images/Subject.png"
 
 const About = () => {
   const { theme } = useContext(ThemeContext);
@@ -46,7 +47,7 @@ const About = () => {
             transition={{ duration: 1.5, ease: "easeInOut" }}
           >
             <motion.img
-              src="/src/assets/images/subject.png"
+              src={aboutImg}
               alt="Profile"
               className={`rounded-lg border-4 w-56 h-72 object-cover shadow-2xl ${isDarkMode ? "border-white" : "border-gray-900"}`}
               whileHover={{ scale: 1.05, rotate: 2 }}
